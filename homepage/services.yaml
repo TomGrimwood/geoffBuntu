@@ -1,0 +1,61 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+
+- Entertainment:
+    - qBittorrent:
+        icon: qbittorrent.png
+        container: qbittorrent
+        href: http://TODO_IP:8084
+        description: Download Torrents.
+        widget:
+          type: qbittorrent
+          url: http://TODO_IP:8084
+          username: TODO_USERNAME
+          password: TODO_PASSWORD
+
+    - Sonarr:
+        icon: sonarr.png
+        container: sonarr
+        href: http://TODO_IP:8989
+        description: Download and Organise TV Shows.
+        widget:
+          type: sonarr
+          url: http://TODO_IP:8989
+          key: TODO_SONARR_API_KEY
+          enableQueue: true  # optional, defaults to false
+
+
+    - Radarr:
+        icon: radarr.png
+        container: radarr
+        href: http://TODO_IP:7878
+        description: Download and Organise Movies.
+        widget:
+          type: radarr
+          url: http://TODO_IP:7878
+          key: TODO_RADARR_API_KEY
+          enableQueue: true  # optional, defaults to false
+
+    - Plex:
+        icon: plex.png
+        href: https://app.plex.tv
+        description: Watch movies and TV shows.
+        server: http://TODO_IP:32400
+        widget:
+          type: plex
+          url: http://TODO_IP:32400
+
+          # https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/
+          key: TODO_X-PLEX-TOKEN
+
+
+    - Prowlarr:
+        icon: prowlarr.png
+        container: prowlarr
+        href: http://TODO_IP:9696
+        description: Find TV Shows and Movies Downloads.
+        widget:
+          type: prowlarr
+          url: http://TODO_IP:9696
+          key: TODO_PROWLARR_API_KEY

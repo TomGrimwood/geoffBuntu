@@ -1,0 +1,22 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/service-widgets
+
+- resources:
+    cpu: true
+    memory: true
+    disk: /
+
+- search:
+    provider: google
+    target: _blank
+
+- openweathermap:
+    label: Wellington # optional
+    latitude: -41.28664
+    longitude: 174.77557
+    units: metric # or imperial
+    provider: openweathermap
+    # Remove the TODO: below, the key is valid.
+    apiKey: TODO:01418aa5088d1b7de3ca7da9c4ff78f8 # required only if not using provider, this reveals api key in requests
+    cache: 5 # Time in minutes to cache API responses, to stay within limits

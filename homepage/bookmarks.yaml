@@ -1,0 +1,18 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmarks
+
+- Developer:
+    - Github:
+        - abbr: GH
+          icon: github.png
+          href: https://github.com/
+- Entertainment:
+    - YouTube:
+        - abbr: YT
+          icon: youtube.png
+          href: https://youtube.com/
+    - RNZ:
+        - abbr: RNZ
+          icon: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwV13r6RNMv--gIZwpn2Yzi42Yrkos2QjveQ&s
+          href: https://rnz.co.nz/
